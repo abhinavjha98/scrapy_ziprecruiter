@@ -63,7 +63,10 @@ for i in range(int(parse_link[1])+1):
     else:
         pp.append(parse_link[0]+"&page="+str(i))
 print(pp)
-sleep(20)
+sleep(5)
+browser.get("https://www.ziprecruiter.com/candidate/search?search=&location=Vista%2C+CA")
+browser.refresh()
+sleep(5)
 job_title = []
 company = []
 location = []
@@ -73,6 +76,7 @@ description = []
 imgs = []
 link_view = []
 for k in pp:
+    sleep(25)
     browser.get(k)
     try:
         job_tit=browser.find_elements_by_class_name("just_job_title")
