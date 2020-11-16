@@ -140,8 +140,6 @@ for j in pp:
         link_view.append("")
 
 len(link_view)
-
-import pandas as pd 
    
 lst = [job_title,company,location,salary,emp_type,description] 
  
